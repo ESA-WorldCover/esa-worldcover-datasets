@@ -82,6 +82,7 @@ if __name__ == '__main__':
 
         if out_fn.is_file() and not args.overwrite:
             print(f"{out_fn} already exists.")
+            continue
 
         if not dryrun:
             r = requests.get(url, allow_redirects=True)

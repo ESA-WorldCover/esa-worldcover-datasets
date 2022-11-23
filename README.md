@@ -13,7 +13,8 @@ on ESA project pages https://worldcover2020.esa.int/ & https://worldcover2021.es
     - [:floppy\_disk: Download](#floppy_disk-download)
       - [:snake: Download from AWS with a python script (country/bounding box)](#snake-download-from-aws-with-a-python-script-countrybounding-box)
       - [Download from AWS with the AWS CLI](#download-from-aws-with-the-aws-cli)
-  - [:notebook:Notebooks](#notebooknotebooks)
+  - [:notebook: Notebooks](#notebook-notebooks)
+  - [:copyright: License](#copyright-license)
 
 
 ## :memo: Cite
@@ -117,7 +118,13 @@ for WorldCover 2020 v100
 (please modify **/local/path** to the desired download location)
 
 
-## :notebook:Notebooks
+## :notebook: Notebooks
 We provide a series of Jupyter notebooks to illustrate how to access the data on AWS
 in your scripts
+
+
+## :copyright: License
+The ESA WorldCover product is provided free of charge, without restriction of use. For the full license information see the Creative [Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+Publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following [citation](#memo-cite).
 

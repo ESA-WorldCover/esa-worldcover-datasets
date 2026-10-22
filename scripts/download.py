@@ -40,9 +40,14 @@ if __name__ == '__main__':
     geom = None
     if country is not None:
         # load natural earth low res shapefile
-        ne = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
-
-        if country not in ne.name.values:
+        # ne = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+        
+        # updated for newer geopandas versions
+        url = "https://naciscdn.org/naturalearth/110m/cultural/ne_110m_admin_0_countries.zip"
+        ne = gpd.read_file(url)
+        
+        # updated for newer geopandas versions
+        if country not in ne["NAME"].values:
             print(f"Selected country '{country}' is not available."
                   " The 'country' parameter should match one of:\n"
                   f"{ne.name.values.tolist()}")

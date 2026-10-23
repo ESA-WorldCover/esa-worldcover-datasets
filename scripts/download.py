@@ -50,10 +50,10 @@ if __name__ == '__main__':
         if country not in ne["NAME"].values:
             print(f"Selected country '{country}' is not available."
                   " The 'country' parameter should match one of:\n"
-                  f"{ne.name.values.tolist()}")
+                  f"{ne['NAME'].values.tolist()}")
             sys.exit()
 
-        geom = ne[ne.name == country].iloc[0].geometry
+        geom = ne[ne["NAME"] == country].iloc[0].geometry
 
     if bounds is not None:
         from shapely.geometry import Polygon
